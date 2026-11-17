@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>桂水会メディカルパートナーズ合同会社｜経営金融コンサルティング</title>
+<meta name="description" content="商品を売らない、経営者のための第三者コンサルティング。法人保険の棚卸し、資金繰りと承継の設計、金融機関提案の読み解きを、中立の立場でお手伝いします。ご相談はいつでも無料です。">
+<style>
+  :root{
+    /* パンセノートLPの色合いに寄せた、明るくやわらかい配色（2026-11-13変更）
+       地色: クリーム #F7F4EC / 面: オフホワイト #FEFAF4 / アクセント: ティール #42A89B 系 */
+    --navy:#274b63; --navy2:#1d384c; --gold:#b28738; --goldsoft:#f4e1bd; --accent:#2f7f73;
+    --ink:#2b2f2a; --sub:#5c665e; --card:#fdfcf7; --line:#ddd8c6; --bg:#f7f4ec;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.85;font-size:19px}
+  a{color:var(--accent)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  /* header */
+  header{position:sticky;top:0;z-index:10;background:#fffdf8;border-bottom:1px solid var(--line)}
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+  .brand small{display:block;letter-spacing:.18em;font-size:13px;color:var(--sub)}
+  .brand strong{font-size:20px;color:var(--navy)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:18px}
+  .btn:hover{background:var(--navy2)}
+  .btn-gold{background:var(--goldsoft);color:var(--ink);border:1px solid var(--gold)}
+  /* hero */
+  .hero{background:linear-gradient(180deg,#fefaf4 0%,#f7f1e1 100%);color:var(--ink);padding:64px 0 56px;border-bottom:1px solid var(--line)}
+  .hero .rule{width:46px;height:3px;background:var(--gold);margin:14px 0 22px}
+  .hero small{letter-spacing:.18em;font-size:14px;color:var(--accent)}
+  .hero h1{font-size:40px;line-height:1.5;margin:0 0 14px;font-weight:800;color:var(--navy)}
+  .hero p.lead{color:#44514a;font-size:19px;margin:0 0 28px;max-width:720px}
+  .price-anchor{display:inline-block;background:#F8EDB2;border:1px solid #d9c98a;color:#4a3f14;font-weight:700;padding:8px 16px;border-radius:999px;margin:0 0 22px;font-size:15px}
+  .case-effect{font-weight:700;color:#2F7F73}
+  .updated{display:inline-block;background:#fff;border:1.5px solid var(--gold);color:var(--navy);font-weight:700;padding:6px 14px;border-radius:999px;font-size:16px;margin:0 0 18px}
+  /* sections */
+  section{padding:56px 0}
+  section.alt{background:#f2edde}
+  h2{font-size:29px;color:var(--navy);margin:0 0 8px;line-height:1.5}
+  h2 + .intro{color:var(--ink);max-width:820px;margin:0 0 28px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card .num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;margin-bottom:10px}
+  .card h3{margin:0 0 8px;font-size:20px;color:var(--navy)}
+  .card p{margin:0;font-size:17.5px}
+  .fee{font-size:26px;font-weight:800;color:var(--navy);margin:2px 0 8px}
+  .fee small{font-size:15px;color:var(--sub);font-weight:600}
+  .note-bar{margin-top:26px;border-left:4px solid var(--gold);background:#fff;padding:16px 20px;border:1px solid var(--line);border-left:4px solid var(--gold)}
+  .note-bar p{margin:0}
+  .two{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;align-items:start}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .panel.light{background:var(--card)}
+  .panel h3{margin:0 0 12px;color:var(--navy);font-size:21px}
+  .prof-row{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:17.5px}
+  .prof-row:last-child{border-bottom:none}
+  .prof-row b{color:var(--accent);white-space:nowrap}
+  ul.posture{list-style:none;margin:0;padding:0}
+  ul.posture li{padding:10px 0;border-bottom:1px dashed var(--line)}
+  ul.posture li:last-child{border-bottom:none}
+  ul.posture b{color:var(--navy);display:block}
+  ul.posture span{font-size:17.5px;color:var(--ink)}
+  table.company{width:100%;border-collapse:collapse;font-size:18px}
+  table.company th,table.company td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+  table.company th{width:130px;color:var(--navy);white-space:nowrap}
+  /* CTA */
+  .cta{background:#e6efe9;color:var(--ink);border:1px solid #c9d8cd;border-radius:12px;padding:28px}
+  .cta h2{color:var(--navy)}
+  .cta p{color:#44514a;margin:0 0 18px}
+  .cta .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .cta a.tel{color:var(--navy);font-weight:700}
+  footer{padding:28px 0 40px;color:var(--sub);font-size:16px}
+  footer .goldline{height:2px;background:var(--gold);margin-bottom:18px}
+  .small-note{font-size:15.5px;color:var(--sub)}
+  .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  table.fee-table,table.calc{width:100%;border-collapse:collapse;font-size:18px;background:#fff}
+  table.fee-table th,table.fee-table td,table.calc th,table.calc td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  table.fee-table th,table.calc th{background:var(--card);color:var(--navy);white-space:nowrap}
+  table.calc td{text-align:right}
+  table.calc td:first-child{text-align:left}
+  table.calc tr.total td{font-weight:800;color:var(--navy)}
+  .detail-block{margin:0 0 34px}
+  .detail-block h3{color:var(--navy);font-size:22px;margin:0 0 8px}
+  .detail-block p{margin:0 0 12px;max-width:900px}
+  .detail-block ul{margin:0 0 12px;padding-left:22px;max-width:900px}
+  .notices{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .notices p{margin:0 0 14px;font-size:19px}
+  .notices p:last-child{margin-bottom:0}
+  .faq-item{border-bottom:1px solid var(--line);padding:16px 0}
+  .faq-item:last-child{border-bottom:none}
+  .faq-item p.q{font-weight:700;color:var(--navy);margin:0 0 6px}
+  .faq-item p.a{margin:0;max-width:900px}
+  @media (max-width:820px){.cards4{grid-template-columns:1fr 1fr}}
+  @media (max-width:820px){
+    .cards{grid-template-columns:1fr}
+    .two{grid-template-columns:1fr}
+    .hero h1{font-size:31px}
+    .brand strong{font-size:18px}
+  }
+  @media print{
+    /* 印刷時は濃い塗りをすべて外し、白地＋罫線だけにする（2026-11-13追加） */
+    body{background:#fff !important}
+    header{position:static}
+    section{padding:24px 0}
+    .hero,.cta,section.alt,.card,.panel,.panel.light,.notices,.note-bar{background:#fff !important;color:#000 !important;border:1px solid #888 !important;box-shadow:none !important}
+    .hero h1,.cta h2,h2,h3,.fee,.card h3,.faq-item p.q{color:#000 !important}
+    .hero p.lead,.cta p,.hero small{color:#222 !important}
+    .btn{background:#fff !important;color:#000 !important;border:1.5px solid #000 !important}
+    .card .num{background:#fff !important;color:#000 !important;border:1px solid #000}
+    a{color:#000 !important}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <div class="brand">
+      <small>KEISUIKAI MEDICAL PARTNERS</small>
+      <strong>桂水会メディカルパートナーズ合同会社</strong>
+    </div>
+    <a class="btn" href="#contact">ご相談はこちら（無料）</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <small>KEISUIKAI MEDICAL PARTNERS</small>
+    <div class="rule"></div>
+    <h1>法人財務運営から、オーナー様の資産管理まで、<br>総合的に中立の立場でお手伝いします。</h1>
+    <p class="updated">最終更新日：2026年11月17日</p>
+    <p class="lead">中小オーナー企業様のための、総合的な経理財務外部コンサルタント。<br>
+    商品を売らない、経営者のための第三者コンサルティングとして、オーナー企業の金融判断を、経営のことばに翻訳します。</p>
+    <a class="btn btn-gold" href="#contact">ご相談はこちら（無料）</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>こんなお悩みはありませんか</h2>
+    <p class="intro">法人保険、借入、外貨建資産、持株会社の資金、役員退職金。個別には理解していても、社長の引退・事業承継まで見通した「全体としての判断」が難しくなっていませんか。</p>
+    <div class="cards">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>法人保険の棚卸し</h3>
+        <p>節税目的で導入した保険について、解約返戻金・保障・資金需要と、税務面の確認事項を整理。将来の判断材料を明らかにします。</p>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>資金繰りと承継の設計</h3>
+        <p>持株会社と子会社の資金、役員退職金、役員報酬、年金、相続を横断し、長期の資金見通しを整えます。</p>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>金融機関提案の読み解き</h3>
+        <p>外為・デリバティブ・運用などの提案を、仕組みとリスクから整理。経営者が判断するための視点を提供します。</p>
+      </div>
+    </div>
+    <div class="note-bar">
+      <p>ご提供するのは、特定商品への結論ではなく、<strong>経営判断のための材料</strong>です。販売手数料を受け取らず、金融機関・保険会社の提案を第三者の立場で、オーナー様が判断できる形に整理します。</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 成果例：公開前に、お客様の書面による同意と算定根拠の保存が必要です -->
+<section class="alt" id="cases">
+  <div class="wrap">
+    <h2>ご支援内容例</h2>
+    <p class="intro">ご支援内容の一例です（金額を含め、想定されるコンサルティング内容の例示であり、実例ではございません）。</p>
+    <div class="cards">
+      <div class="card">
+        <h3>事業保険の解約時期の点検</h3>
+        <p>役員退職金に充当する見通しで加入している節税目的の事業保険を総点検し、保険自身が持つ解約適齢期を整理いたします。</p>
+        <p class="case-effect">解約が1年遅れるだけで、年間掛け金を大きく超えて数百万円規模の損失になるケースもありますので、退職時期とは関係なく、保険ごとに適切な解約時期の判断が出来るよういたします</p>
+      </div>
+      <div class="card">
+        <h3>特殊な目的の事業保険の棚卸し</h3>
+        <p>事業承継やM&A対策などを目的として加入している生命保険契約については、再度保険会社の担当者を交えて検証させて頂き、オーナー様が判断しやすい形で情報提供を致します。</p>
+        <p class="case-effect">特殊な目的で加入している保険の定期的な整理見直しにより、年間数百万規模で会社負担が減少するケースもございます。</p>
+      </div>
+      <div class="card">
+        <h3>投資商品の棚卸し</h3>
+        <p>保有している株式・投資信託・生命保険（変額）・不動産投資のリスクを分類し、会社が経済環境や相場環境によって受ける影響も合わせた形で整理します</p>
+        <p class="case-effect">為替リスク、株式リスク、不動産リスク、金利リスクなどを、会社への影響も含めて整理することによって、どのようなリスクを取るのが適切か、オーナー様が判断しやすい材料を提供いたします</p>
+      </div>
+      <div class="card">
+        <h3>外為デリバティブの情報整理</h3>
+        <p>外為デリバティブなど複雑な金融商品に対し、メリット・デメリット・選択できる商品などを含め、オーナー様が判断しやすい情報をご提供いたします</p>
+        <p class="case-effect">市況環境の変化によって複雑な金融商品が受ける影響について、会社が受けるリスクを助長するか打ち消すかも含めて一覧できるようにさせて頂くことにより、将来の経営の透明性が増します。</p>
+      </div>
+      <div class="card">
+        <h3>グループ内の資金の流れ</h3>
+        <p>グループ会社間の貸借取引あるいは役員借入金を、将来的な資金繰りに落とし込んで整理いたします。</p>
+        <p class="case-effect">ゼロ金利時代が終わった今、グループ間の貸借取引は利払いの増加で雪だるま式に膨らむ危険性があり、また、オーナー様からの役員借入金は、相続や資産承継に向けての整理の方向性も含めて、長期的な資金計画案をご提示するとともに、グループ間で発生する利息について、税務上の確認事項も含めて一覧できるようにします</p>
+      </div>
+      <div class="card">
+        <h3>借入金条件の銀行対応サポート</h3>
+        <p>会社の長期の資金計画を設計した上で、銀行との条件交渉などをサポートします。</p>
+        <p class="case-effect">会社の資金繰り支援について、銀行がより対応しやすい形に落とし込むことによって、会社と銀行双方にメリットが生じます</p>
+      </div>
+      <div class="card">
+        <h3>役員報酬の組み替え</h3>
+        <p>オーナー様の役員報酬の受け取り方法を検証し、オーナー様の手取り、会社負担、年金・社会保険への影響をオーナー様が判断しやすい形で試算いたします。</p>
+        <p class="case-effect">年間50万円規模で会社負担が減少し、同時にオーナー様ご家族の手取りが増加し、年金受給見込み金額が年間150万円規模で増加するケースもございます（完全引退後の減少分も含めて試算）</p>
+      </div>
+      <div class="card">
+        <h3>資産承継の設計</h3>
+        <p>オーナー様の相続も見据えた上で、生前贈与の非課税枠の有効活用も含めた、資産承継方法をご提案申し上げます。税務上の取扱いは、顧問税理士に確認しながら進めます。</p>
+        <p class="case-effect">ご自身の老後生活資金の確保や、引退時期、相続税の見通しなど、資産承継には不確定要素が多く、オーナー様とご一緒に、資産承継プランを考えさせて頂きます</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fees">
+  <div class="wrap">
+    <h2>料金について</h2>
+    <p class="intro">ご支援内容についてのご相談は、いつでも無料です。ご契約は月額制で、最低月額80,000円、成果に応じて増える場合も、1か月のご請求は上限350,000円まで（個別に合意した場合は550,000円まで）でお願いしています。月額算定の方法は、ご相談の際にご説明します。内容にご納得いただけない場合、ご契約いただく必要はありません。</p>
+    <div class="cards4">
+      <div class="card">
+        <h3>ご支援内容についてのご相談</h3>
+        <p class="fee">いつでも無料</p>
+        <p>現在のお悩みと検討内容を確認します。</p>
+      </div>
+      <div class="card">
+        <h3>月額料金（最低）</h3>
+        <p class="fee">80,000円</p>
+        <p>（お支払総額）着手金はありません。</p>
+      </div>
+      <div class="card">
+        <h3>月額料金（1か月の請求上限）</h3>
+        <p class="fee">350,000円</p>
+        <p>（お支払総額）成果に応じて、明細に基づき増えていきます。個別に合意した場合は550,000円まで。算定額が上限を超えた分は、翌月以降へ繰り越します。</p>
+      </div>
+      <div class="card">
+        <h3>契約期間</h3>
+        <p class="fee">4か月（自動更新）</p>
+        <p>自動更新も4か月単位です。1か月前の通知で、期間の途中でも終了できます。請求上限を超えた分は、翌月へ繰り越します。</p>
+      </div>
+    </div>
+    <div class="note-bar">
+      <p>毎月、報酬明細をご提出します。明細の根拠は、お尋ねいただければご説明します。算定の対象には、法人に生じた効果のほか、ご本人の同意に基づく経営者・役員ご本人の効果も含めることができます。算定額が請求上限を超えて繰り越した分（未請求残高）は、報酬明細に表示します。契約終了時に残った未請求残高は消滅します。</p>
+    </div>
+    <p style="margin-top:20px">
+      <a class="btn btn-gold" href="#contact">ご相談を申し込む</a>
+    </p>
+  </div>
+</section>
+
+<section class="alt" id="notices">
+  <div class="wrap">
+    <h2>ご利用にあたっての注意事項</h2>
+    <div class="notices">
+      <p>当社は、特定の成果または金額を保証するものではありません。効果は、お客様の状況、制度、実施時期その他の条件により異なります。</p>
+      <p>当社は、税務代理、税務書類の作成、個別の税務判断および申告業務を行いません。税務上の判断または税額の確認が必要な場合は、お客様の顧問税理士その他適法に税務相談を行うことができる専門家に確認していただきます。</p>
+      <p>当社は、社会保険・年金に関する相談および経営面からの情報整理を行いますが、行政機関へ提出する書類の作成、提出代行その他社会保険労務士の独占業務は行いません。必要な場合は、社会保険労務士等の専門家に確認していただきます。</p>
+      <p>当社は、保険商品の勧誘、契約締結の代理・媒介または申込みの受領を行いません。既契約の内容や資金面への影響を整理する場合であっても、新規契約や乗換えが必要なときは、登録を受けた保険募集人等が対応します。</p>
+      <p>当社は、有価証券その他の金融商品について、個別の投資判断に関する有償の助言または顧客資産の運用を行いません。</p>
+      <p>経営者・役員個人の効果を算定する場合は、ご本人の同意を取得したうえで、利用目的を明示し、必要な範囲で個人情報を取り扱います。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>よくある質問</h2>
+    <div class="faq-item">
+      <p class="q">Q　最低でいくらかかりますか</p>
+      <p class="a">A　原則4カ月間契約ですが、1カ月前の通知によって途中でも解約できますので、最低金額は、1カ月間料金の最低金額の80,000円です。（ご契約は月額制で、最低月額80,000円、成果に応じて、1か月のご請求は上限350,000円まで（個別に合意した場合は550,000円まで）増える場合が有ります。）</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Q　成果に応じた部分は、どのように算定するのですか</p>
+      <p class="a">A　毎月ご提出する報酬明細に、算定した効果と金額を記載します。算定方法の詳細は、ご相談・ご提案の際にご説明します。明細の内容についてご異議がある場合は、お申し出ください。算定には、法人の効果のほか、ご本人の同意をいただいたうえで、経営者・役員ご本人の効果（手取り・年金など）を含めることがあります。個人情報は、同意いただいた目的の範囲で取り扱います。</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Q　税金や社会保険について相談できますか</p>
+      <p class="a">A　経営判断に必要な選択肢と資金面への影響を整理します。個別の税務判断や申告業務は税理士等、社会保険に関する届出書類の作成・提出代行は社会保険労務士等の専門家に確認していただきます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Q　相談したら契約しなければなりませんか</p>
+      <p class="a">A　いいえ。ご相談の後にお見積りを提示します。内容にご納得いただけない場合は、ご契約いただく必要はありません。ご契約の後も、1か月前の通知で終了できます。</p>
+    </div>
+    <p style="margin-top:24px"><a class="btn btn-gold" href="#contact">ご相談を申し込む</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div class="panel">
+        <h3>代表プロフィール</h3>
+        <p style="margin-top:0"><strong>桂水会メディカルパートナーズ合同会社　代表社員　舘（たち）圭介</strong></p>
+        <div class="prof-row"><b>2026年6月まで</b><span>大垣共立銀行に勤務</span></div>
+        <div class="prof-row"><b>経営管理部 副部長</b><span>コンプライアンス・銀行ALMを担当</span></div>
+        <div class="prof-row"><b>OKBエキスパート</b><span>金融マーケット分野を担当</span></div>
+        <div class="prof-row"><b>2016年</b><span>行員栄誉賞を受賞</span></div>
+      </div>
+      <div class="panel light">
+        <h3>私たちの基本姿勢</h3>
+        <ul class="posture">
+          <li><b>販売しない</b><span>特定の金融商品を販売しません。</span></li>
+          <li><b>分かる形にする</b><span>仕組み・選択肢・確認事項を整理します。</span></li>
+          <li><b>守秘を徹底する</b><span>会社と一族の重要情報を慎重に扱います。</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>対応エリア・対応方法</h2>
+    <p class="intro">主な対応エリアは、岐阜県美濃地方です。岐阜・大垣近傍のお客様には、ご希望により対面でも対応します（打ち合わせ場所として、ソフトピアジャパン共創オフィス等も利用できます）。<br>
+    オンライン・郵送でのご相談は、滋賀県（湖東・湖北地方）、愛知県（尾張地方）、三重県（北勢地方）からもお受けしています。その他の地域についても、まずはご相談ください。</p>
+
+    <h2 style="margin-top:36px">ソフトウェア事業</h2>
+    <p class="intro">思考と対話を整理するための自社開発プロダクト「パンセノート」（商標登録出願中）を提供しています。<br>
+    → <a href="https://keisuikai-mp.github.io/panseenote-lp/">パンセノートのご紹介ページ</a></p>
+
+    <h2 style="margin-top:36px">会社概要</h2>
+    <table class="company">
+      <tr><th>会社名</th><td>桂水会メディカルパートナーズ合同会社</td></tr>
+      <tr><th>設立</th><td>2026年1月</td></tr>
+      <tr><th>資本金</th><td>800万円</td></tr>
+      <tr><th>代表社員</th><td>舘 圭介</td></tr>
+      <tr><th>事業内容</th><td>経営コンサルティング業務、ソフトウェア開発・販売業務</td></tr>
+      <tr><th>所在地</th><td>岐阜県大垣市</td></tr>
+      <tr><th>電話</th><td>080-5839-7114</td></tr>
+      <tr><th>メール</th><td>anshin@keisuikai-mp.jp</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta">
+      <h2>まずは、自社が対象となるかをご相談ください。</h2>
+      <p>秘密保持を前提に、課題と必要な整理の範囲を確認します。ご相談はいつでも無料です。ご相談はフォームからの送信が基本です。</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLScUFRrMRlZrC6-sx8bsZrH1oYGRIxs25qtaM_AXPVj9PL8M7Q/viewform" target="_blank" rel="noopener">ご相談フォーム</a>
+        <a class="tel" href="mailto:anshin@keisuikai-mp.jp">メール：anshin@keisuikai-mp.jp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="goldline"></div>
+    <p style="margin:0">桂水会メディカルパートナーズ合同会社<br>
+    当社は、保険商品の募集・販売、税務代理、法律事務は行いません。個別の税務・法務に関する判断が必要な場合は、お客様の顧問税理士・弁護士等の専門家に確認していただきます。</p>
+    <p style="margin:10px 0 0"><a href="privacy.html">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
